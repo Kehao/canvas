@@ -68,8 +68,8 @@ Canvas.Clock = function(){
 
         };
         /*绘制时间(3,6,9,12)*/
-        c.font = " bold 30px impack"
-            c.fillText("3", 110, 10);
+        c.font = " bold 30px impack";
+        c.fillText("3", 110, 10);
         c.fillText("6", -7, 120);
         c.fillText("9", -120, 10);
         c.fillText("12", -16, -100);
@@ -162,4 +162,5 @@ Canvas.Clock = function(){
 var main = function(){
     var clock = new Canvas.Clock();
     clock.drawClock();
+
 };
