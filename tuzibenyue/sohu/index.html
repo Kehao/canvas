@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>插画</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <meta name="mobileOptimized" content="width" />
+    <meta name="handheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+
+<body>
+    <div id="U_wrapper" style="visibility:hidden">
+        <div class="entry U_entry">
+            <div class="entry_sky"></div>
+            <div class="entry_gate_left U_entry_gate_left U_size"></div>
+            <div class="entry_gate_right U_entry_gate_right U_size"></div>
+            <div class="entry_bg U_entry_bg U_size"></div>
+            <div class="entry_logo U_size"></div>
+            <div class="entry_arrow_in U_size"></div>
+            <div class="entry_ground"></div>
+
+            <div class="U_exit" style="display:none;">
+                <div class="entry_man_1 U_entry_man_1 U_size"></div>
+                <div class="entry_man_2 U_entry_man_2 U_size"></div>
+                <div class="entry_tag_1 U_entry_tag_1 U_size"></div>
+                <div class="entry_tag_2 U_entry_tag_2 U_size"></div>
+                <div class="entry_tag_3 U_entry_tag_3 U_size"></div>
+                <div class="entry_tag_4 U_entry_tag_4 U_size"></div>
+                <div class="entry_tag_5 U_entry_tag_5 U_size"></div>
+            </div>
+
+            <!-- 事件响应区域 (开门 & 分享)-->
+            <div class="entry_open_gate" id="J_open_gate"></div>
+            <div class="entry_share" id="J_share"></div>
+        </div>
+
+
+
+        <div class="gallery U_gallery" style="opacity:0; display:none;">
+            <div class="ceil"></div>
+            <div class="gallery-bg"></div>
+            <div class="U_pic pic_1" data-index="1"></div>
+            <div class="U_pic pic_2" data-index="2"></div>
+            <div class="U_pic pic_3" data-index="3"></div>
+            <div class="U_pic pic_4" data-index="4"></div>
+            <div class="U_pic pic_5" data-index="5"></div>
+            <div class="U_pic pic_6" data-index="6"></div>
+            <div class="U_pic pic_7" data-index="7"></div>
+            <div class="U_pic pic_8" data-index="8"></div>
+            <div class="U_pic pic_9" data-index="9"></div>
+            <div class="U_pic pic_10" data-index="10"></div>
+            <div class="U_pic pic_11" data-index="11"></div>
+            <div class="U_pic pic_12" data-index="12"></div>
+
+            <div class="statue_1"></div>
+            <div class="statue_2_5"></div>
+            <div class="statue_2_4"></div>
+            <div class="statue_2_3"></div>
+            <div class="statue_2_2"></div>
+            <div class="statue_2_1"></div>
+            <div class="statue_3"></div>
+            <div class="statue_4"></div>
+            <div class="statue_5"></div>
+            <div class="statue_6"></div>
+            <div class="statue_7"></div>
+            <div class="statue_8"></div>
+            <div class="statue_9"></div>
+            <div class="statue_10"></div>
+
+            <div class="arrow_slide"></div>
+            <div class="arrow_exit" id="J_exit_gallery"></div>
+        </div>
+
+        
+
+        <div class="pic_viewer U_pic_viewer">
+            <div class="pic_viwer_wrapper U_pic_viewer_wrapper">
+                <div class="pic_content U_pic_content"></div>
+                <div class="icon_paw U_icon_7 U_icon"></div>
+                <div class="icon_heart_1 U_icon_8 U_icon"></div>
+                <div class="icon_heart_2 U_icon_8 U_icon"></div>
+                <div class="icon_heart_3 U_icon_8 U_icon"></div>
+            </div>
+
+            <div class="close_box" id="J_closePicViewer">
+                <i class="icon_close"></i>
+            </div>
+        </div>
+
+
+        <div class="sound" id="J_Sound">
+            <div class="icon-play"></div>
+            <div class="icon-pause" style="display:none;"></div>
+        </div>
+        <audio loop="loop" id="J_BgAudio" src="./media/music.m4a"></audio>
+
+    </div>
+
+
+
+    <div class="loading_page" id="U_loading_page" style="visibility:hidden;">
+        <img src="./image/loading_frame.png" width="100%" height="100%">
+        <div class="loading_top_box">
+            <div class="loading_logo_top"></div>
+        </div>
+        <div class="loading_pic_box U_loading_pic_box">
+            <div class="loading_pic U_loading_pic">
+                <i class="loading_dot"></i>
+                <i class="loading_dot"></i>
+                <i class="loading_dot"></i>
+                <i class="loading_dot"></i>
+                <i class="loading_dot"></i>
+                <i class="loading_dot"></i>
+                <i class="loading_dot"></i>
+                <div class="loading_percent" id="percent"></div>
+            </div>
+        </div>
+        <div class="loading_bottom_box">
+            <div class="loading_logo_bottom"></div>
+        </div>
+    </div>
+
+
+    <div id="test">
+        <div onclick="javascript:window.location.reload()">刷新</div>
+        <div id="J_exit_gallery_test">闭馆</div>
+    </div>
+
+
+    <script type="text/javascript" src="./js/zepto-touch.js"></script>
+    <script type="text/javascript" src="./js/core.js"></script>
+    <script type="text/javascript" src="./js/imageLoad.js"></script>
+    <script type="text/javascript" src="./js/loading.js"></script>
+
+</body>
+</html>
